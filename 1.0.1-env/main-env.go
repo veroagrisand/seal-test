@@ -14,6 +14,8 @@ func helloWorld(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, message)
 }
 
+#declare a main function
+
 func main() {
 	http.HandleFunc("/", helloWorld)
 	port := os.Getenv("PORT")
